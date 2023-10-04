@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2FFF7"
+    android:gravity="center"
+    tools:context=".department">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/toplogobg"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/gpa_cgpa_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPA &amp; CGPA"
+                    android:textColor="#32B768"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CALCULATOR"
+                    android:textColor="#32B768"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/it"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/greenboxbg"
+                    android:text="INFORMATION TECHNOLOGY"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22dp"/>
+
+                <TextView
+                    android:id="@+id/cse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/greenboxbg"
+                    android:text="COMPUTER SCIENCE ENGINEERING"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22dp"/>
+
+                <TextView
+                    android:id="@+id/ece"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/greenboxbg"
+                    android:text="ELECTRONICS AND COMMUNICATION ENGINEERING"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22dp"/>
+
+                <TextView
+                    android:id="@+id/eee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/greenboxbg"
+                    android:text="ELECTRICAL AND ELECTRONICS ENGINEERING"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22dp"/>
+
+                <TextView
+                    android:id="@+id/mech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/greenboxbg"
+                    android:text="MECHANICAL ENGINEERING"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22dp"/>
+
+                <TextView
+                    android:id="@+id/civil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/greenboxbg"
+                    android:text="CIVIL ENGINEERING"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22dp"/>
+
+                <TextView
+                    android:id="@+id/auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/greenboxbg"
+                    android:text="AUTOMOBILE ENGINEERING"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22dp"/>
+
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/greenboxbg"
+                    android:text="PRODUCTION ENGINEERING"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#FAFAFA"
+                    android:textSize="22dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

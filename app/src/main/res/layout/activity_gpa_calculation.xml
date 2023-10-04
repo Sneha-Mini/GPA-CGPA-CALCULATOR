@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2FFF7"
+    tools:context=".gpa_calculation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/toplogobg"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/gpa_cgpa_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPA &amp; CGPA"
+                    android:textColor="#32B768"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CALCULATOR"
+                    android:textColor="#32B768"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:text="Syllabus not yet given"
+                    android:visibility="gone"
+                    android:fontFamily="@font/hammersmithone_regular_font"
+                    android:textColor="#32B768"
+                    android:gravity="center"
+                    android:textSize="24dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/sub1lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:padding="15dp"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub1txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub1"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub1spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub2lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub2txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub2"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub2spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub3lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:padding="15dp"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub3txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub3"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub3spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub4lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub4txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub4"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub4spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub5lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub5txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub5"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub5spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub6lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub6txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub6"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub6spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub7lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub7txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub7"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub7spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub8lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub8txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub8"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub8spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub9lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub9txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub9"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub9spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sub10lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:background="@drawable/whiteboxbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/sub10txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sub10"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#32B768"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_weight="3"
+                        android:id="@+id/sub10spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/greenboxbg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gpacallay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:background="@drawable/greenborderbg">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="GPA"
+                            android:gravity="center"
+                            android:textColor="#32B768"
+                            android:textSize="22dp"
+                            android:fontFamily="@font/hammersmithone_regular_font"
+                            />
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:gravity="center"
+                            android:textColor="#32B768"
+                            android:textSize="22dp"
+                            android:fontFamily="@font/hammersmithone_regular_font"
+                            />
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/gpavalue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:gravity="center"
+                            android:textColor="#32B768"
+                            android:textSize="22dp"
+                            android:fontFamily="@font/hammersmithone_regular_font"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/calculate"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/greenboxbg"
+                        android:text="CALCULATE"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/hammersmithone_regular_font"
+                        android:textColor="#FAFAFA"
+                        android:textSize="24dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
